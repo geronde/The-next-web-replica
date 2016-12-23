@@ -1,0 +1,290 @@
+#grid {
+	width: 100%;
+	margin: 0 auto;
+}
+/*styling the header*/
+.inline li {display: inline;} /* making the list li inline*/
+
+.top-menu {
+background: black;
+padding: 5px 0 5px 0;
+font-size: 1em;
+}
+
+.top-menu li {margin: 0 5px 0 5px;} /* no need for responsive margin*/
+
+.right-menu {float: left;} .left-menu{ float: right; }
+
+/* the fixed menu style*/
+.fixed-menu {
+	padding: 10px; /* no need for responsive padding*/
+	background: white;
+	border: 1px solid #f4f4f4;
+	box-shadow: white 2px 1px;
+}
+.fixed-menu li {
+	margin: 0 10px 0 10px;/* no need for responsive margin*/
+}
+.fixed-menu a {
+	text-transform: uppercase;
+	font-size: 0.875em;
+}
+/* both lists have same font color*/
+.top-menu a, .fixed-menu a { color: #adadad;}
+
+/* --------------------------------    Cover Stories             -------------------------------------- */
+#cover {
+
+   padding: 10px 10px 0 10px;
+   background: rgba(134, 132, 131, 0.04);
+   }
+
+.main-cover {
+	width: 50%;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+	box-shadow: 2px 0 2px;
+}
+.left-covers {
+	float: right;
+	width: 49%;
+}
+.medium-cover { background-color: #d3d3d3;
+margin-bottom: 10px;
+position: relative; 
+box-shadow: 2px 0 2px;
+}
+
+.small-cover-container {position: relative; width: 100%; }
+ .small-cover {display: inline-block; position: relative ;width: 49.5%; box-shadow: 2px 0 2px;}
+ .small-cover article:last-child { float: right; }
+
+#cover img { max-width: 100%; }
+
+#cover1 {
+	background: url("images/AugustLockTNW.jpg");
+
+	background-size: cover;
+	height: 300px;
+}
+
+#cover2 {
+	background: url("images/askjelly.png");
+	height: 150px;
+	background-size: cover;
+}
+#cover3 {
+	background: url("images/Hoverbike-Work-Plz-maybe.gif");
+	height: 140px;
+	background-size: cover;
+}
+
+#cover4 {
+	background: url("images/google-hq-1200x600.jpg");
+	height: 140px;
+	background-size: cover;
+}
+/*Article text*/
+.cover-content{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size:1.5625em; /*25px/16px*/
+	font-weight: bold;
+	padding: 0 5px 0 5px;
+	color: white;
+	background: rgba(0,0, 0, 0.5);
+	
+}
+/* --------------------------------    End Cover Stories             -------------------------------------- */
+
+/* --------------------------------    Latest News             -------------------------------------- */
+#contenu {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px; 
+	
+}
+.latest-news { margin: 0 auto;}
+.latest-news article {
+	display: inline-block;
+	width: 22%;
+	height: 200px; /*fluid height 200/281.6*/
+	margin: 10px;
+}
+.latest-news h3 { font-size: 0.875em }
+.latest-news p { font-size: 0.75em; }
+.latest-news img {max-width: 100%;}
+
+.latest-news-by-category { margin-top: 20px;}
+.latest-news-by-category h2 { padding-bottom: 10px; }
+.latest-news-by-category article {
+   display: inline-block;
+   width: 30%;
+   height: 130.20833%; /* fluid height : 500px/384px(width of the latest news by cat block) */
+   margin: 10px;
+   margin-bottom: 10px;
+}
+
+.image-banner {
+	position: relative;
+}
+.image-banner img {width: 100%;}
+.banner-description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 90px;
+	background: rgba(8, 8, 8, 0.3);
+	color: white;	
+}
+.banner-description h4 {font-family: fantasy; text-transform: uppercase; margin: 5px; color: #ff2f0a;}
+.banner-description h3 {font-weight: bold; font-family: sans-serif; font-size:1em; margin:5px;}
+.banner-description small { margin: 5px; font-size:0.75em; /*12/16*/ }
+
+.latest {
+	height: 80px;
+	background: #f5d6cc;
+	position: relative;
+}
+.latest h4 { text-transform: uppercase; margin-top: 10px; }
+.latest h3 { font-weight: bold; margin-top: 3px; font-size: 0.875em; }
+.latest h3 , .latest h4 {color: #ff2f0a; margin-left: 5px; float: left; width: 250px;}
+.latest img { width: 100px; height: 80px;  float: right; position: absolute; right: 0 }
+
+.more-latest-news a { color: #ff742e; font-size: 0.875em;/*14/16*/ }
+.more-latest-news li { list-style:initial; margin: 5px; list-style-position: inside; color: #ff742e;}
+
+.latest-news h2 , .latest-news-by-category h2, .deals h2 {
+	color: #ff2f0a;
+	font-weight:bold;
+	font-size: 1.5625em; /*25/16*/
+}
+
+/* --------------------------------    End Latest News             -------------------------------------- */
+
+/* --------------------------------    Deals             -------------------------------------- */
+.deals{
+margin-top: 20px;
+margin-bottom:40px;
+}
+.deals article {
+	display: inline-block;
+	width: 22%;
+	height:95.88068%; /* fluid height 270/281.6*/
+	margin:0.78125%; /*fluid margin* 10/1280 */
+}
+.deals h2 { padding-left: 8px; }
+.deals img {max-width: 100%;}
+.deals h3 { font-weight: bold; margin-top: 2px;}
+.deals p {margin: 10px 0;}
+.deals p, .deals h3 { font-size:0.875em; }
+.linethrough { text-decoration: line-through; }
+/* --------------------------------    End Deals             -------------------------------------- */
+
+
+/* --------------------------------    Footer             -------------------------------------- */
+
+/*Quotes*/
+
+.share {
+	background: #f4f4f4;
+	padding: 20px 0 20px 0;
+	text-align: center;
+
+}
+.share h5 { 
+	text-transform: uppercase;
+	letter-spacing:1px;
+	font-size: 0.875em;/*14/16*/
+	color: #7d7873;
+	padding: 10px 0 5px 0;
+ }
+ .share p {
+font-size: 2.0625em; /*33/16*/
+color: #ea5906;
+font-weight: bold;
+padding: 0px 0 15px 0;
+ }
+ .share-on-twitter {
+ 	width: 6%;
+ 	height: 30px;
+ 	border: 2px solid #d3d3d3;
+ 	background-color:#f4f4f4;
+ 	color: #919191;
+ 	font-size: 0.875em;/*14/16*/
+ 	border-radius: 2px;
+
+    background:  url("images/Twitter-f.png") no-repeat ;
+    background-size: 18px ;
+    background-position: 5px 3px;
+ }
+
+/*social media*/
+.infos {
+background-color: #212121;
+text-align: center;
+padding: 30px 0 30px 0;
+}
+.social img { width: 50px; }
+.social a { padding: 5px; }
+.links li { padding: 5px; }
+.links a { color: #f4f4f4; text-transform: uppercase; font-size: 0.6875em; /*11/16*/ letter-spacing: 1px; font-weight: bold; }
+
+.copyrights {
+	background-color: black;
+	padding:20px 0 20px 0;
+}
+.copyrights p { color: #d3d3d3; font-size:0.875em;/*14/16*/
+text-align: center; padding: 0 15px 0px 10px }
+/*Sticky footer */
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+#grid {
+	min-height: 100%;
+	position: relative;
+}
+
+#container {
+	padding-bottom: 200px;
+}
+footer {
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+/* --------------------------------    End Footer             -------------------------------------- */
+
+/*fix*/
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+.group {
+	zoom:"1";
+}
+
+/*all links have no decorations*/
+a {text-decoration: none;}
+
+.hidden {
+	
+position:absolute;
+clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+clip: rect(1px, 1px, 1px, 1px);}
+
+
+/* --------------------------------    Headlines             -------------------------------------- */
+/* --------------------------------    End Headlines             -------------------------------------- */

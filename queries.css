@@ -1,0 +1,70 @@
+
+/*Media Queries!*/
+
+@media screen and (max-width:720px) 
+{
+
+/*-------------------cover stories--------------------*/
+.main-cover, .left-covers, .medium-cover, .small-cover-container, .small-cover {
+	min-width: 100%;
+}
+
+.left-covers { margin-top: 10px; }
+
+#cover1, #cover2, #cover3, #cover4 { height: 150px; }
+
+.small-cover { margin-bottom: 5px;  }
+
+
+
+/*-----------------------Latest news---------------------------------*/
+
+#contenu { 
+	width: 100%;
+   margin: 0 auto;
+ }
+ .latest-news article { display:block; width: 80%; height:150px;} 
+ .latest-news img { width: 45%; float: left;}
+ .latest-news h3, .latest-news p { float: right; width: 50%; }
+ .latest-news h2 { margin-left: 10px; }
+
+ .latest-news-by-category article { display: block; width: 90%; margin: 0 auto; margin-bottom: 5px;}
+
+ .deals h2 { padding-left: 3.05555%; } /* 11/360 (360 is min-width)*/
+ .deals article { display: block; width: 100%; padding-bottom:20.83333%; /*60/360*/ }
+ .deals img { float: left; width: 22%; padding-left: 10px; }
+ .deals h3, .deals p { float: right; width: 68%; }
+
+}
+
+
+@media screen and ( min-width: 720px) and (max-width: 1024px) {
+
+.main-cover, .left-covers { width: 100%; }
+
+.medium-cover { width: 33.3%; margin-top: 10px; }
+.small-cover-container { width: 65.97222222%; top: -10px; }
+.medium-cover, .small-cover-container { display: inline-block; }
+
+
+#cover2, #cover3, #cover4 { height: 150px; }
+
+
+/*------------------------Latest news------------------------------------*/
+
+#contenu { width: 95%; }
+.latest-news article { width: 30%; }
+
+.latest-news-by-category article { width: 45%; }
+
+.deals article { width: 30%; }
+
+}
+
+
+
+
+
+
+
+
